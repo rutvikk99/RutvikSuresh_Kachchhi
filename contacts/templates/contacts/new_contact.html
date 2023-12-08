@@ -1,0 +1,16 @@
+<!-- contacts/templates/contacts/new_contact.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create New Contact</title>
+</head>
+<body>
+    <h1>Create New Contact</h1>
+    <form method="post" action="{% url 'new_contact' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+        <a href="{% url 'home' %}">Cancel</a>
+    </form>
+</body>
+</html>
