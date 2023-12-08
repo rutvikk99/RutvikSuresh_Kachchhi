@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
     <title>Contact Management</title>
 </head>
 <body>
     <h1 style="color: green;">Contact Management</h1>
     <a href="{% url 'new_contact' %}">Create a New Contact</a>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
     <table border="1">
         <tr>
             <th>Contact Name</th>
