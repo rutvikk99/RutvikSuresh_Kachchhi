@@ -1,0 +1,30 @@
+<!-- contacts/templates/contacts/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Management</title>
+</head>
+<body>
+    <h1 style="color: green;">Contact Management</h1>
+    <a href="{% url 'new_contact' %}">Create a New Contact</a>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <table border="1">
+        <tr>
+            <th>Contact Name</th>
+            <th>Email</th>
+            <th>Created Time</th>
+            <th>Action</th>
+        </tr>
+        {% for contact in contacts %}
+            <tr>
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.email }}</td>
+                <td>{{ contact.created_at }}</td>
+                <td><a href="{% url 'contact_details' contact.id %}">Details</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <footer> &copy;Created By Rutvik Suresh Kachchhi</footer>
+</body>
+</html>
