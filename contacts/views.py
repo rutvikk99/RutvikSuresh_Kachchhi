@@ -33,7 +33,7 @@ def edit_contact(request, contact_id):
     else:
         form = ContactForm(instance=contact)
 
-    return render(request, 'contacts/edit_contact.html', {'form': form, 'contact': contact})
+    return render(request, 'contacts/update_contact.html', {'form': form, 'contact': contact})
 
 def delete_contact(request, contact_id):
     contact = get_object_or_404(Contact, pk=contact_id)
