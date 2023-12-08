@@ -1,0 +1,27 @@
+<!-- contacts/templates/contacts/contact_details.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Details</title>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <table border="1">
+        <tr>
+            <th>Contact Name</th>
+            <th>Email</th>
+            <th>Notes</th>
+            <th>Created Time</th>
+        </tr>
+        <tr>
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.notes }}</td>
+            <td>{{ contact.created_at }}</td>
+        </tr>
+    </table>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'edit_contact' contact.id %}">Edit</a>
+    <a href="{% url 'delete_contact' contact.id %}">Delete</a>
+</body>
+</html>
