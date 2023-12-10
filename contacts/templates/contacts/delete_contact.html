@@ -1,6 +1,7 @@
 <!-- contacts/templates/contacts/delete_contact.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
     {% load static %}
     <link rel="stylesheet" href="{% static 'delete_contact.css' %}">
@@ -14,13 +15,20 @@
         }
     </script>
 </head>
+
 <body>
     <h1>Delete Contact</h1>
     <p>Are you sure you want to delete contact "{{ contact.name }}"?</p>
     <form method="post" action="" id="deleteForm">
         {% csrf_token %}
         <input type="submit" value="Delete" onclick="confirmDelete()">
-        <a href="{% url 'contact_details' contact.id %}">Cancel</a>
+        <a href="{% url 'contact_details' contact.id %}"> <button type="button" class="btn btn-primary">
+                Cancel</button></a>
     </form>
+    <footer>
+        <hr />
+        <p style="text-align: center;"> &copy;Created By Rutvik Suresh Kachchhi</p>
+    </footer>
 </body>
+
 </html>
