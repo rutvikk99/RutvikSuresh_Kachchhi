@@ -15,7 +15,11 @@ step 4 to run :
               
               cd ../..
 
+              pip install django
+              python manage.py makemigrations
               
+              python manage.py migrate
+
               python manage.py runserver
 
               
