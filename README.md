@@ -2,8 +2,11 @@
 
 Steps 
 Step 1 Git Pull:https://github.com/rutvikk99/RutvikSuresh_Kachchhi.git
+
 Step 2 Open Vscode
+
 Step 3 PIP install venv
+
 step 4 to run :cd env/Scripts
               .\activate
               cd ../..
