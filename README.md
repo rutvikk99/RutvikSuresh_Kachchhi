@@ -12,7 +12,7 @@ Step 2 Open Vscode
 
 step 3 to run :
 
-          cd RutvikSuresh_Kachchhi-main
+          cd RutvikSuresh_Kachchhi
 
           pip install django
           
