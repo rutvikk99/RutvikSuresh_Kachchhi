@@ -6,7 +6,7 @@
 
 Steps 
 
-Step 1 Git clone or download zip :https://github.com/rutvikk99/RutvikSuresh_Kachchhi.git
+Step 1 Git clone or download zip (extract) :https://github.com/rutvikk99/RutvikSuresh_Kachchhi.git
 
 Step 2 Open Vscode and open RutvikSuresh_Kachchhi-main folder
 
